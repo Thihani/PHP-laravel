@@ -18,25 +18,16 @@ use Illuminate\Support\Facades\Route;
 
 });*/
 
-Route::get('/', function () {
-    return '<h1>Home page</h>';
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'show']);
 
-});
-
-Route::get('/product', function () {
-    return '<h1>Liste des produits</h>';
-
-});
+Route::get('/product', [\App\Http\Controllers\ProductController::class, 'show']);
 
 Route::get('/product/{id}', function ($id) {
-    return '<h1>Fiche du produit </h>'. $id;
+    return '<h1>Fiche du produit </h1>'. $id;
 
 });
 
-Route::get('/cart', function () {
-    return '<h1>Panier</h>';
-
-});
+Route::get('/cart', [\App\Http\Controllers\CartController::class, 'show']);
 
 
 

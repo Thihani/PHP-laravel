@@ -12,11 +12,10 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
 
-class HomeController extends Controller
+class ProductController extends Controller
 {
     public function show()
     {
-        return '<h1>Home page</h1>';
+        return '<h1>Liste des produits</h1>';
     }
 }
-

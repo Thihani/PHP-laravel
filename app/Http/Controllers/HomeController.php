@@ -19,4 +19,3 @@ class HomeController extends Controller
         return '<h1>Home page</h1>';
     }
 }
-
