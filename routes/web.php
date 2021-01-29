@@ -13,13 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+
+});*/
+
+Route::get('/', function () {
+    return '<h1>Home page</h>';
 
 });
 
-Route::get('/hello', function () {
-    return '<h1>Hello World From Laravel v8.X (PHP v7.4.X)</h>';
+Route::get('/product', function () {
+    return '<h1>Liste des produits</h>';
+
+});
+
+Route::get('/product/{id}', function ($id) {
+    return '<h1>Fiche du produit </h>'. $id;
+
+});
+
+Route::get('/cart', function () {
+    return '<h1>Panier</h>';
 
 });
 
