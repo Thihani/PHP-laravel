@@ -1,5 +1,5 @@
 <html>
 <body>
-<h1>Home page</h1>
+<h1>Liste des produits</h1>
 </body>
 </html>
