@@ -22,10 +22,7 @@ Route::get('/', [\App\Http\Controllers\HomeController::class, 'show']);
 
 Route::get('/product', [\App\Http\Controllers\ProductController::class, 'show']);
 
-Route::get('/product/{id}', function ($id) {
-    return '<h1>Fiche du produit </h1>'. $id;
-
-});
+Route::get('/product/{id}', [\App\Http\Controllers\ProductController::class, 'showDetail']);
 
 Route::get('/cart', [\App\Http\Controllers\CartController::class, 'show']);
 

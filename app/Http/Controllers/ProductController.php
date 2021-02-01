@@ -17,5 +17,12 @@ class ProductController extends Controller
     public function show()
     {
         return '<h1>Liste des produits</h1>';
+
     }
+    public function showDetail($id)
+    {
+        return '<h1>Fiche du produit </h1>'. $id;
+
+    }
+
 }
